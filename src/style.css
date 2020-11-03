@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: linear-gradient(to right, #02aab0, #00cdac);
+  box-sizing: border-box;
+}
+
+#game-board {
+  background-color: #ddd;
+  width: 80vmin;
+  height: 80vmin;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
