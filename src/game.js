@@ -22,5 +22,6 @@ function update() {
 }
 
 function draw() {
+  gameBoard.innerHTML = ''; // reset preious piece
   drawSnake(gameBoard);
 }
