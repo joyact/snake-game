@@ -1,0 +1,14 @@
+// set up game loop (constantly update the render)
+let lastRenderTime = 0;
+const SNAKE_SPEED = 2; // snake's move per sec
+
+function main(currentTime) {
+  window.requestAnimationFrame(main);
+  const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000;
+  if (secondsSinceLastRender < 1 / SNAKE_SPEED) return;
+
+  console.log('Rendor');
+  lastRenderTime = currentTime;
+}
+
+window.requestAnimationFrame(main);
